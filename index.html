@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Personal Profile</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap");
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Poppins", sans-serif;
+
+        body {
+          background: linear-gradient(135deg, #1a1a1d, #3a3a40);
+          color: #fff;
+          display: flex;
+          justify-content: center;
+          padding: 40px;
+        }
+
+        .profile-card {
+          background: #2b2b31;
+          width: 380px;
+          padding: 30px;
+          border-radius: 20px;
+          box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+          animation: fadeIn 1s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+          from {
+            opacity: 0;
+            transform: translateY(20px);
+          }
+          to {
+            opacity: 1;
+            transform: translateY(0);
+          }
+        }
+
+        .profile-card img {
+          width: 150px;
+          height: 150px;
+          border-radius: 50%;
+          object-fit: cover;
+          border: 4px solid #00c2ff;
+          display: block;
+          margin: 0 auto 20px auto;
+        }
+
+        h1 {
+          text-align: center;
+          font-size: 26px;
+          margin-bottom: 10px;
+          font-weight: 600;
+        }
+
+        .info {
+          margin-top: 20px;
+          line-height: 1.9;
+          font-size: 16px;
+        }
+
+        .info strong {
+          color: #00c2ff;
+        }
+
+        .line {
+          width: 100%;
+          height: 2px;
+          background: #00c2ff;
+          margin: 15px 0;
+          border-radius: 6px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="profile-card">
+      <img src="image/Passport.jpeg" alt="Passport Photo" />
+      <h3>Appiah Nana Yaw Sarfo</h3>
+
+      <div class="line"></div>
+
+      <div class="info">
+        <p><strong>Gender:</strong> Male</p>
+        <p><strong>Occupation:</strong> Student</p>
+        <p><strong>Nationality:</strong> Ghanaian</p>
+        <p><strong>Relationship Status:</strong> Single </p>
+        <p><strong>Religion:</strong> Christian</p>
+        <p><strong>Education:</strong> Tertiary Education</p>
+        <p><strong>Location:</strong> Accra, Madina</p>
+      </div>
+
+
+  </body>
+</html>
